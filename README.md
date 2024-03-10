@@ -8,16 +8,16 @@ A full report write up for these simulations can be found in the `docs` folder
 
 The result for the differential drive robot is shown below.
 
-![Alt Text](./diff_drive_valet.gif)
+![Alt Text](media/diff_drive_valet.gif)
 
 The results for the car is shown below.
 
-![Alt Text](./car_valet_f_cost_sort.gif)
+![Alt Text](media/car_valet_f_cost_sort.gif)
 
-![Alt Text](./car_animation_h_cost_sort.gif)
+![Alt Text](media/car_animation_h_cost_sort.gif)
 
 The results for the truck is shown below.
 
-![Alt Text](./truck_animation_f_cost_sort.gif)
+![Alt Text](media/truck_animation_f_cost_sort.gif)
 
-![Alt Text](./truck_animation_h_cost_sort.gif)
+![Alt Text](media/truck_animation_h_cost_sort.gif)
