@@ -283,7 +283,6 @@ class Simulation:
         obj = Obstacle(0,0,100,100)
         clock = pygame.time.Clock()
         counter = 0
-        pygame.time.delay(5000)
         while True:
             for event in pygame.event.get():
                 if event.type == QUIT:

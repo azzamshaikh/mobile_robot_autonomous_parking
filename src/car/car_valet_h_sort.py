@@ -121,17 +121,17 @@ class Planner:
         h, f, current_node = self.open_list.get()
         self.open_list_visuals.append(current_node)
 
-        print(str(current_node.state) + "    " + str(self.goal_node.state) + "    " +
-              str(distance(current_node.state,self.goal_node.state)))
+        # print(str(current_node.state) + "    " + str(self.goal_node.state) + "    " +
+        #       str(distance(current_node.state,self.goal_node.state)))
 
         if self.iterations != 0:
             if (self.angular_diff(current_node.state[2],self.goal_node.state[2]) < 0.15 and
                     distance(current_node.state, self.goal_node.state) < self.meters2pixels*2):
-                print('found')
+                # print('found')
                 current = current_node
                 self.solution_found = True
                 if self.solution_found is True:
-                    print('getting path')
+                    # print('getting path')
                     node_path = []
                     pose_path = []
                     while current is not None:
@@ -186,11 +186,11 @@ class Planner:
         right_car_collide = pygame.sprite.collide_mask(self.test_vehicle, self.obstacles[2])
         center_collide = pygame.sprite.collide_mask(self.test_vehicle, self.obstacles[1])
         if left_car_collide or right_car_collide or center_collide:
-            print('predicting collision')
+            # print('predicting collision')
             return True
         elif self.is_rect_out_of_bounds(self.test_vehicle.rect.topleft,self.test_vehicle.rect.bottomleft,
                                         self.test_vehicle.rect.topright, self.test_vehicle.rect.bottomright):
-            print('out of bounds')
+            # print('out of bounds')
             return True
         return False
 
