@@ -1,4 +1,4 @@
-# Mobile Robot Path Planning
+# Mobile Robot Autonomous Parking
 
 This repository contains code to navigate a mobile robot to a goal position. In this case, the goal position is a parallel parked position. 
 
